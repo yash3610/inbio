@@ -15036,18 +15036,21 @@ div#featured-project-carousel {
   border-radius: 6px;
   background: var(--background-color-1);
   box-shadow: var(--shadow-1);
-  display: inline-block;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  white-space: nowrap;
 }
 @media only screen and (max-width: 767px) {
   .testimonial .inner .card-description .title-area .rating {
     padding: 15px 25px;
-    display: flex;
+    display: inline-flex;
   }
 }
 @media only screen and (max-width: 479px) {
   .testimonial .inner .card-description .title-area .rating {
-    padding: 5px 17px 9px 17px;
-    display: inline-block;
+    padding: 5px 12px 9px 12px;
+    display: inline-flex;
   }
 }
 .testimonial .inner .card-description .title-area .rating img {
@@ -16554,6 +16557,11 @@ span.sr-only {
   font-size: 16px;
 }
 
+.contact-form-status.error-msg {
+  color: #f10;
+  font-size: 16px;
+}
+
 .success-msg {
   margin-top: 20px;
   background: rgba(62, 183, 94, 0.1803921569);
@@ -16563,6 +16571,11 @@ span.sr-only {
 }
 
 .success-msg p {
+  color: green;
+  font-size: 16px;
+}
+
+.contact-form-status.success-msg {
   color: green;
   font-size: 16px;
 }

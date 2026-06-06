@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/jpeg" href="assets/images/logo/logo.jpeg">
     <!-- CSS 
     ============================================ -->
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
@@ -30,8 +30,8 @@
             <div class="col-lg-2 col-6">
                 <div class="header-left">
                     <div class="logo">
-                        <a href="index.html">
-                            <img src="assets/images/logo/logo.png" alt="logo">
+                        <a class="brand-wordmark" href="index.html" aria-label="Yash Hule home">
+                            <span>YASH</span><strong>HULE</strong>
                         </a>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                             <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
                             <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                             <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                            <li class="nav-item current"><a class="nav-link" href="http://localhost:3000/#clients">Clients</a></li>
+                            <!-- <li class="nav-item current"><a class="nav-link" href="http://localhost:3000/#clients">Clients</a></li> -->
                             <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
                             <li class="nav-item"><a class="nav-link" href="#blog">blog</a></li>
                             <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
@@ -79,8 +79,8 @@
         <div class="inner">
             <div class="menu-top">
                 <div class="menu-header">
-                    <a class="logo" href="index.html">
-                        <img src="assets/images/logo/logos-circle.png" alt="Personal Portfolio">
+                    <a class="logo brand-wordmark" href="index.html" aria-label="Yash Hule home">
+                        <span>YASH</span><strong>HULE</strong>
                     </a>
                     <div class="close-button">
                         <button class="close-menu-activation close"><i data-feather="x"></i></button>
@@ -94,7 +94,7 @@
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Features</a></li>
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#clients">Clients</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link smoth-animation" href="#clients">Clients</a></li> -->
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#pricing">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#blog">blog</a></li>
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
@@ -158,10 +158,9 @@
                                     </h1>
 
                                     <div>
-                                        <p class="description">I use animation as a third dimension by which to simplify
-                                            experiences and kuiding thro each and every interaction. I’m not adding
-                                            motion
-                                            just to spruce things up, but doing it in ways that.</p>
+                                        <p class="description">I build modern, responsive, and user-friendly websites
+                                            that turn ideas into engaging digital experiences. I focus on clean code,
+                                            smooth performance, and thoughtful design across every device.</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -1337,6 +1336,8 @@
             </div>
         </div>
         <!-- End Testimonia Area  -->
+        <!-- Clients section commented out -->
+        <template id="disabled-clients-section">
         <!-- Start Client Area -->
         <div class="rn-client-area rn-section-gap section-separator" id="clients">
             <div class="container">
@@ -2373,6 +2374,7 @@
             </div>
         </div>
         <!-- End client section -->
+        </template>
         <!-- Pricing Area -->
         {#  <div class="rn-pricing-area rn-section-gap section-separator" id="pricing">
             <div class="container">
@@ -3691,11 +3693,12 @@
                 <div class="col-lg-12">
                     <div class="footer-area text-center">
 
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="assets/images/logo/logo-vertical.png" alt="logo">
+                        <div class="logo footer-brand-logo">
+                            <a href="index.html" aria-label="Yash Hule home">
+                                <img src="assets/images/logo/logo.jpeg" alt="Yash Hule">
                             </a>
                         </div>
+                        <h4 class="footer-brand-name">Yash <strong>Hule</strong></h4>
 
                         <p class="description mt--30">© 2022. All rights reserved by <a target="_blank" href="https://themeforest.net/user/rainbow-themes/portfolio">Rainbow-Themes.</a></p>
                     </div>
